@@ -1,0 +1,49 @@
+    #qDiv-0 #qSpan-0-one,
+    #qDiv-1 #qSpan-1-one,
+    #qDiv-2 #qSpan-2-one,
+    #qDiv-3 #qSpan-3-one,
+    #qDiv-4 #qSpan-4-one,
+    #qDiv-5 #qSpan-5-one,
+    #qDiv-6 #qSpan-6-one {
+        display: inline;
+    }
+    #qSpan-0-two,
+    #qSpan-1-two,
+    #qSpan-2-two,
+    #qSpan-3-two,
+    #qSpan-4-two,
+    #qSpan-5-two,
+    #qSpan-6-two {
+        display: none;
+    }
+    #qDiv-0:hover #qSpan-0-one,
+    #qDiv-1:hover #qSpan-1-one,
+    #qDiv-2:hover #qSpan-2-one,
+    #qDiv-3:hover #qSpan-3-one,
+    #qDiv-4:hover #qSpan-4-one,
+    #qDiv-5:hover #qSpan-5-one,
+    #qDiv-6:hover #qSpan-6-one {
+        display: none;
+    }
+    #qDiv-0:hover #qSpan-0-two,
+    #qDiv-1:hover #qSpan-1-two,
+    #qDiv-2:hover #qSpan-2-two,
+    #qDiv-3:hover #qSpan-3-two,
+    #qDiv-4:hover #qSpan-4-two,
+    #qDiv-5:hover #qSpan-5-two,
+    #qDiv-6:hover #qSpan-6-two {
+        display: inline;
+    }
+    #questions > div {
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+    }
+    #newberryHome img {
+        height: 40px;
+    }
+    #newberryDigiHome {
+        height: 40px;
+        /* margin: auto 10px; */
+        /* padding: 0 0 30px 0; */
+    }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="iotmw.js"></script>
+        <link rel="stylesheet" href="iotmw.css">
+    </head>
+    <body>
+        <header>
+            <div class="newbNavbar">
+                <button id="newberryHome">
+                    <img src="square-n-only.png" alt="">
+                </button>
+                <button id="newberryDigiHome">
+                    &gt; Digital Newberry
+                </button>
+            </div>
+            <div class="title">
+                <div id="logo">
+                </div>
+            </div>
+            <div class="contentNavbar">
+                <ul id="contentNavList"></ul>
+            </div>
+        </header>
+        <main>
+            <div id="mainText"></div>
+            <div id="questions"></div>
+        </main>
+        <footer>
+            <div id="credits"></div>
+        </footer>
+    </body>
+    <script>
+        function logo(text){
+            var target = document.querySelector('#logo'),
+                x;
+            for (x in text){
+                var textI = document.createElement('span');
+                textI.id = 'logoText-' + x;
+                textI.appendChild( document.createTextNode(text[x] + ' ') );
+                target.appendChild(textI);
+
+            }
+        }
+        function contentNavigation(list){
+            var target = document.querySelector('#contentNavList'),
+                n;
+            for (n in list){
+                var cNavLink = document.createElement('a');
+                cNavLink.id = 'cNavLink';
+                cNavLink.href = list[n][0];
+                cNavLink.appendChild( document.createTextNode(list[n][1]));
+                target.appendChild(cNavLink);
+            }
+        }
+        function content(contentObj){
+            var target = document.querySelector('#mainText'),
+                title = document.createElement('h2'),
+                x;
+            title.appendChild( document.createTextNode(contentObj.title) );
+            target.appendChild(title);
+            for (x in contentObj.text){
+                var content = document.createElement('p');
+                content.appendChild( document.createTextNode(contentObj.text[x]) );
+                target.appendChild(content);
+            }
+        }
+        function flippyContent(flippyArray){
+            var target = document.querySelector('#questions'),
+                x;
+            for (x in flippyArray){
+                var div = document.createElement('div');
+                var spanOne = document.createElement('span');
+                var spanTwo = document.createElement('span');
+                var ansLink = document.createElement('a');
+                div.id = 'qDiv-' + x;
+                spanOne.id = 'qSpan-' + x + '-one';
+                spanTwo.id = 'qSpan-' + x + '-two';
+                // console.log(flippyArray[x].url)
+                ansLink.href = 'https://publications.newberry.org/digital/indians-midwest/' + flippyArray[x].url;
+                ansLink.appendChild(document.createTextNode( 'Go to ' + flippyArray[x].article + ' for more detail.'))
+                var answer = flippyArray[x].a;
+                spanTwo.appendChild( document.createTextNode(answer) );
+                spanTwo.appendChild(ansLink);
+                spanOne.appendChild( document.createTextNode(flippyArray[x].q) );
+                div.appendChild(spanOne);
+                div.appendChild(spanTwo);
+                target.appendChild(div);
+            }
+        }
+        logo(logoText);
+        contentNavigation(contentNav);
+        content(mainTextContent);
+        flippyContent(questions);
+    </script>
+</html>
