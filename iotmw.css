@@ -1,3 +1,15 @@
+    body {
+        font-size: 16px;
+    }
+    a {
+        color: #000;
+    }
+    a:hover {
+        color: #000;
+    }
+    li:hover, .newbNavbar:hover{
+        background: rgba(0,0,0,0.25)
+    }
     #qDiv-0 #qSpan-0-one,
     #qDiv-1 #qSpan-1-one,
     #qDiv-2 #qSpan-2-one,
@@ -32,18 +44,94 @@
     #qDiv-4:hover #qSpan-4-two,
     #qDiv-5:hover #qSpan-5-two,
     #qDiv-6:hover #qSpan-6-two {
-        display: inline;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        width: initial;
     }
     #questions > div {
         display: inline-block;
         height: 150px;
         width: 150px;
     }
+
+
     #newberryHome img {
         height: 40px;
     }
-    #newberryDigiHome {
-        height: 40px;
-        /* margin: auto 10px; */
-        /* padding: 0 0 30px 0; */
+    #newberryDigiHome, .contentNavbar, #mainText, #questions {
+        font-family: 'Lato', sans-serif;
+    }
+    #logo, #mainText h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #newberryDigiHome, #contentNavList li {
+        text-transform: uppercase;
+    }
+    #logo {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #logoText-0, #logoText-3 {
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+    #logoText-1, #logoText-2 {
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+    #logoText-2, #logoText-3 {
+        vertical-align: top;
+    }
+
+    .newbNavbar {
+        height: 50px;
+    }
+    .newbNavbar:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .newbNavbar a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contentNavbar {
+        text-align: center;
+    }
+    #contentNavList {
+        width: 80%;
+        border-top: 1px solid black;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        list-style-type: none;
+        padding: 0;
+        margin: 15px auto;
+    }
+    #contentNavList li {
+        padding: 15px 0 0 0;
+        display: inline-block;
+        height: 50px;
+        overflow: wrap;
+        width: 12%;
+        text-align: center;
+        vertical-align: top; 
+    }
+    main {
+        color: #fff;
+        width: 42%;
+        margin: 0 42% 0 12%;
+        padding: 1rem;;
+        background: rgba(0,0,0,0.75); 
+    }
+    main h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    #questions div{
+        border: 2px solid white;
+        position: relative;
     }

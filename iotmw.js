@@ -23,12 +23,6 @@
             article: 'People, Places & Time'
         },
         {
-            q: 'What relevance do fishing, ricing, and forestry have for Indian people today?',
-            a: 'These activities provide subsistence and commercial opportunities, and also are an expression of cultural identity.',
-            url: 'the-homeland-its-use',
-            article: 'The Homeland & its Use'
-        },
-        {
             q: 'What roles have Indian people played in the regional economy?',
             a: 'They were instrumental in the success of the fur trade, played a key role in regional trade in the 18th and 19th centuries, were essential to the tourist trade and commerce in the 20th century, and today own businesses that employ hundreds of people locally.',
             url: 'indians-the-marketplace',
@@ -58,4 +52,10 @@
             url: 'indian-imagery',
             article: 'Indian Imagery'
         },
+        {
+            q: 'What relevance do fishing, ricing, and forestry have for Indian people today?',
+            a: 'These activities provide subsistence and commercial opportunities, and also are an expression of cultural identity.',
+            url: 'the-homeland-its-use',
+            article: 'The Homeland & its Use'
+        }
     ]

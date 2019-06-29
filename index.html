@@ -6,43 +6,71 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <script src="iotmw.js"></script>
-        <link rel="stylesheet" href="iotmw.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="iotmw2.css">
+        <link rel="preload" as="image" href="wp1.jpg" >
+        <link rel="preload" as="image" href="wp2.jpg" >
+        <link rel="preload" as="image" href="wp3.jpg" >
     </head>
     <body>
-        <header>
-            <div class="newbNavbar">
-                <button id="newberryHome">
-                    <img src="square-n-only.png" alt="">
-                </button>
-                <button id="newberryDigiHome">
-                    &gt; Digital Newberry
-                </button>
+    <div id="bodydiv"></div>
+    <ul class="menu-list hide" id="menuList"></ul>
+    <header>
+        <div class="newbNavbar">
+            <a href="https://www.newberry.com" class="newberryHome">
+                <img src="square-n-only.png" alt="" />
+            </a>
+            <a href="digital/" class="newberryDigiHome">
+                &gt; Digital Newberry
+            </a>
+            <div class="menuButton" onclick="menuClick(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
             </div>
-            <div class="title">
-                <div id="logo">
-                </div>
+        </div>
+        <div class="title">
+            <div id="logo">
             </div>
-            <div class="contentNavbar">
-                <ul id="contentNavList"></ul>
+        </div>
+        <div class="contentNavbar">
+            <ul id="contentNavList"></ul>
+        </div>
+    </header>
+    <main>
+        <div id="mainText"></div>
+        <div id="questions"></div>
+    </main>
+    <footer>
+        <div class="credits">
+            <div class="credainer">
+
+                <a href="http://www.newberry.org">
+                    <img src="nlogo-white.gif" alt="">
+                </a>
+                <a href="neh.com">
+                    <img src="H-logo-white.png" alt="">
+                </a>
             </div>
-        </header>
-        <main>
-            <div id="mainText"></div>
-            <div id="questions"></div>
-        </main>
-        <footer>
-            <div id="credits"></div>
-        </footer>
+        </div>
+    </footer>
     </body>
     <script>
         function logo(text){
             var target = document.querySelector('#logo'),
                 x;
+            var logoTop = document.createElement('div')
+            logoTop.id = 'logo-top';
+            var logoBottom = document.createElement('div')
+            logoBottom.id = 'logo-bottom';
             for (x in text){
                 var textI = document.createElement('span');
                 textI.id = 'logoText-' + x;
                 textI.appendChild( document.createTextNode(text[x] + ' ') );
-                target.appendChild(textI);
+                (x < 2 ? logoTop.appendChild(textI) : logoBottom.appendChild(textI))
+                target.appendChild(logoTop);
+                target.appendChild(logoBottom);
 
             }
         }
@@ -50,11 +78,13 @@
             var target = document.querySelector('#contentNavList'),
                 n;
             for (n in list){
-                var cNavLink = document.createElement('a');
+                var cNavLi = document.createElement('li'),
+                    cNavLink = document.createElement('a');
                 cNavLink.id = 'cNavLink';
                 cNavLink.href = list[n][0];
                 cNavLink.appendChild( document.createTextNode(list[n][1]));
-                target.appendChild(cNavLink);
+                cNavLi.appendChild(cNavLink);
+                target.appendChild(cNavLi);
             }
         }
         function content(contentObj){
@@ -73,28 +103,50 @@
             var target = document.querySelector('#questions'),
                 x;
             for (x in flippyArray){
-                var div = document.createElement('div');
-                var spanOne = document.createElement('span');
-                var spanTwo = document.createElement('span');
-                var ansLink = document.createElement('a');
+                var div = document.createElement('div'),
+                    spanOne = document.createElement('span')
+                    spanTwo = document.createElement('span')
+                    ansLine = document.createElement('p'),
+                    ansLink = document.createElement('a');
                 div.id = 'qDiv-' + x;
                 spanOne.id = 'qSpan-' + x + '-one';
                 spanTwo.id = 'qSpan-' + x + '-two';
                 // console.log(flippyArray[x].url)
                 ansLink.href = 'https://publications.newberry.org/digital/indians-midwest/' + flippyArray[x].url;
-                ansLink.appendChild(document.createTextNode( 'Go to ' + flippyArray[x].article + ' for more detail.'))
-                var answer = flippyArray[x].a;
-                spanTwo.appendChild( document.createTextNode(answer) );
-                spanTwo.appendChild(ansLink);
+                ansLink.appendChild(document.createTextNode( flippyArray[x].article))
+                ansLine.appendChild(document.createTextNode('Go to '));
+                ansLine.appendChild(ansLink);
+                ansLine.appendChild(document.createTextNode(' for more detail.'));
+                spanTwo.appendChild( document.createTextNode(flippyArray[x].a) );
+                spanTwo.appendChild(ansLine);
                 spanOne.appendChild( document.createTextNode(flippyArray[x].q) );
                 div.appendChild(spanOne);
-                div.appendChild(spanTwo);
+                spanOne.appendChild(spanTwo);
                 target.appendChild(div);
             }
+        }
+        function navigationMenu(list){
+            var target = document.querySelector('#menuList'),
+                n;
+            for (n in list){
+                var cNavLi = document.createElement('li'),
+                    cNavLink = document.createElement('a');
+                cNavLink.id = 'mNavLink';
+                cNavLink.href = list[n][0];
+                cNavLink.appendChild( document.createTextNode(list[n][1]));
+                cNavLi.appendChild(cNavLink);
+                target.appendChild(cNavLi);
+            }
+        }
+        function menuClick(x) {
+            x.classList.toggle("change");
+            document.querySelector('#menuList').classList.toggle('hide')
         }
         logo(logoText);
         contentNavigation(contentNav);
         content(mainTextContent);
         flippyContent(questions);
+        navigationMenu(contentNav);
+
     </script>
 </html>
