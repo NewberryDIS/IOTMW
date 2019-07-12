@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers path="http://newberry.webfactional.com/indiansmidwestmedia/flashmap/">
+
+<!--
+Latitude = up/down
+Longitude = left/right
+-->
+
+<marker type="Ojibwa">
+  <caption name="Burt Lake Ottawa and Chippewa" src="Burt_Lake_Band.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[The Burt Lake Ottawa and Chippewa (the Cheboygan Band) signed the Treaty of 1836, in which the U.S. guaranteed them a reservation in their homeland in the Burt Lake area for five years.  The U.S. reneged on this promise.  This village or band next signed the 1855 Treaty of Detroit, which provided for individual allotments on reservations, and in 1872 Congress assigned the Cheboygans allotments on two townships.  Looking for more security, the Burt Lake Ottawa and Chippewa used their treaty annuity payments to purchase land in Cheboygan County, and the state of Michigan and the federal government agreed that the land would not be taxed.  But the Burt Lake Indians now were citizens and taxes were assessed.  In 1900, John McGinn, a non-Indian speculator bought the land for back taxes and, when the Indian men were away working, drove the women and children out of their village and burned it to the ground.  The Burt Lake Indians then resided with other nearby Indians.  The U.S. filed suit against McGinn in 1911 seeking to regain the land for the Cheboygan tribe.  The Michigan court decided against the U.S. and, despite entreaties by Burt Lake leaders over the next 20 years, the U.S. did not appeal.  Throughout these years they remained a hardworking, cooperating community that had leaders and held gatherings and ceremonies as well as maintained their own Catholic church and cemetery.
+	In 1934 the Cheboygans asked to be politically organized under the Indian Reorganization Act but the BIA rejected the appeal because the Burt Lake Indians did not have a land base.  In 1985 they sent a letter of intent to petition for recognition to the BAR.  In 2005 they petitioned the Assistant Secretary of Indian Affairs for federal recognition but were denied in 2006, apparently because some of their members had enrolled in another tribe in order to obtain services from the federal government.  In 2007 Congress also denied their request for recognition.  The 650-member community has a tribal office in Brutus, Michigan. ]]></caption>
+	<pos lat="45.55000" lng="-84.9000" />
+	<pos lat="45.55000" lng="-84.7500" />
+	<pos lat="45.45000" lng="-84.7500" />
+	<pos lat="45.45000" lng="-84.9000" />
+	<img><![CDATA[Catholic Church, Burt Lake Indian Community. Photo courtesy of Grand Rapids History and Special Collections, Archives, Grand Rapids Public Library, Grand Rapids, MI]]></img><!-- caption text -->
+</marker>
+
+
+<marker type="Ojibwa">
+ 	<caption name="Swan Creek Black River Confederated Ojibwa Tribes" src="Swan_Creek_Black_River.jpg" state="Michigan" color="0xff0000" url="" > 
+	<![CDATA[The Swan Creek and Black River villages (or bands) lived in southeast Michigan when they ceded this homeland in treaties in 1807 and 1836.  But many remained in the area.  In 1855 they and the Saginaw band signed a treaty with the U.S.  In 1864 they all signed another treaty in order to obtain a reservation, but most of the Swan Creek and Black River Ojibwa lived off the reservation in their homeland in southeast Michigan.  During the late 19th and early 20th centuries, they worked and lived in their homeland, maintaining a network of cooperating kin, supported their own Indian church and cemetery, and had gatherings.  Their leaders tried to represent their interests in dealings with federal officials.
+	In 1934 when the Indian Reorganization Act was proposed, the Swan Creek Black River Ojibwa wanted a tribal government separate from the Saginaws, but this idea was rejected.  Most Swan Creek Black River Ojibwa still lived off the Isabella reservation.  In the 1980s, some enrolled with the Saginaw in order to share in the payments from a treaty claim.
+	In December 1991 these people incorporated as the Swan Creek Black River Confederated Ojibwa Tribe, and in February 1992 the state of Michigan recognized them as an Indian tribe.  The next year they submitted a letter of intent to the BAR, petitioning for federal recognition.  In 1998 they brought their case to Congress but did not succeed.  They continue to have meetings and maintain a roll but do not have an official headquarters. ]]></caption>
+	<pos lat="43.37000" lng="-84.1500" />
+	<pos lat="43.37000" lng="-84.0000" />
+	<pos lat="43.27000" lng="-84.0000" />
+	<pos lat="43.27000" lng="-84.1500" />
+	<img><![CDATA[Treaty of 1864. Ratified Indian Treaties.  United States (Newberry Library, M152) ]]></img><!-- caption text -->
+</marker>
+
+
+<marker type="Ojibwa">
+ 	<caption name="Grand River Bands of Ottawa Indians" src="Grand_River_Ottawa.jpg" state="Michigan" color="0xff0000" url="" > 
+	<![CDATA[The homeland of the 19 bands of Grand River Ottawa is along Grand River and other river valleys in southwest Michigan.  They signed treaties with the U. S. in 1807, 1821, 1836, and 1855.  The 1855 treaty provided for the removal of Ottawas north of the Grand River, but apparently some stayed behind.  In 1934 they requested to form a tribal government under the Indian Reorganization Act, but the BIA, while agreeing they were eligible, denied them reorganization due to funding issues.  In the 1940s they organized with other Ottawa tribes as the Northern Michigan Ottawa Association to pursue treaty claims.  The Indian Claims Commission decided in their favor.  In 1976 Congress provided some of the judgment funds to the Grand River Ottawa, to descendants of people on the 1908 roll who had ¼ blood quantum.  In 1997 Congress provided for the distribution of more of the judgment funds to Ottawa tribes, including unrecognized ones that could obtain recognition by 2006.  The Grand River Ottawa, despite their belief that they were already federally recognized, began the recognition process.
+	In 1994 the Grand River Bands of Ottawa Indians sent a letter of intent to the BAR.  In 2000 they submitted a documented petition.  They received a reply in 2005 and sent additional documentation in 2006.  Worried that the BAR would delay acting on the petition, the tribe unsuccessfully petitioned Congress to instruct the BAR to act by a certain time so that they could meet Congress’s deadline to qualify for judgment funds.  The Grand River Ottawa have 700 members, still living in southwest Michigan, and they have official leaders and ceremonies in the Grand River area, as well as an organization that tries to provide services. ]]></caption>
+	<pos lat="43.03000" lng="-85.7500" />
+	<pos lat="43.03000" lng="-85.6000" />
+	<pos lat="42.93000" lng="-85.6000" />
+	<pos lat="42.93000" lng="-85.7500" />
+	<img><![CDATA[Ron Yob, Tribal Chairman, testifying before Congress on behalf of the Grand River Ottawa. Photo courtesy of The United States Senate Committee on Indian Affairs]]></img><!-- caption text -->
+</marker>
+
+
+<marker type="Ojibwa">
+ 	<caption name="Shawnee Nation United Remnant Band of Ohio" src="Shawnee_of_Ohio_2.jpg" state="Ohio" color="0xff0000" url="" > 
+	<![CDATA[The members of this tribe are descendants of Shawnee people from 36 villages that resisted removal from Ohio.  The remnant population remained in Ohio, maintained a leadership tradition, and a sense of community.  In 1971 they began to formally organize, and had a roll with 312 members.  In 1978 they began petitioning the Ohio legislature for recognition, and in January 1980 they were recognized as the Shawnee Nation United Remnant Band of Ohio by the Ohio General Assembly.  By 1995, they had over 500 members.  The tribe requires a blood quantum of at least 1/16 Shawnee blood.  They receive no federal or state funding.  The tribe purchased land and a tourism business consisting of a camp site, Shawnee village, museum, and recreation.  This site also serves as a cultural center for the tribe.]]></caption>
+	<pos lat="40.50000" lng="-83.6500" />
+	<pos lat="40.50000" lng="-83.5000" />
+	<pos lat="40.40000" lng="-83.5000" />
+	<pos lat="40.40000" lng="-83.6500" />
+	<img><![CDATA[At Shawnee Village. Photo courtesy of Matthew J. Cline]]></img><!-- caption text -->
+</marker>
+
+</markers>

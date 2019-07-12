@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>all maps</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="xml/mapdata-v1.3.js"></script>
+</head>
+<body>
+    <div id="buttons"></div>
+    <div id="map" style="height: 300px; width: 300px;"></div>
+    <script>
+        mapData.forEach(function(mark, index){
+            console.log(mark.pos.length);
+            var coords = [];
+            if(mark.pos.length > 1){
+                mark.pos.forEach(function(p,i){
+                    // console.log(p.lat);
+                    var tempArray = [p.lat, p.lng]
+                    coords.push(tempArray);
+                    console.log(tempArray);
+                })
+                polygonMaker(coords);
+            } else {
+                // coords.push([p.lat, p.lng]);
+                // markerMaker(coords);
+            }
+        })
+        function markerMaker(data){
+            console.log(data);
+            L.marker([data]).addTo(map);
+        }
+        function polygonMaker(data){
+            L.polygon([data]).addTo(map);
+        }
+        function initmap() {
+            // set up the map
+            map = new L.Map('map');
+
+            // create the tile layer with correct attribution
+            var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+            var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});		
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(41.900062, -87.630642),5);
+            map.addLayer(osm);
+            // var marker = L.marker([latt, longg]).addTo(map);
+        }
+        initmap();
+    </script>
+</body>
+</html>

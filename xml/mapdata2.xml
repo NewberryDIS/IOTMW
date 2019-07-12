@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers path="http://newberry.webfactional.com/indiansmidwestmedia/flashmap/">
+
+<!--
+Latitude = up/down
+Longitude = left/right
+-->
+
+
+<!--//====== Illinois ======//-->
+<marker type="Ojibwa">
+  <caption name="The People of the Mountains, Mt. Olive" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Illinois" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2004, but have not sent a petition. ]]></caption>
+	<pos lat="39.3000" lng="-89.7500" />
+	<pos lat="39.3000" lng="-89.6000" />
+	<pos lat="39.2000" lng="-89.6000" />
+	<pos lat="39.2000" lng="-89.7500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Illinois ======//-->
+
+
+<!--//====== Indiana ======//-->
+<marker type="Ojibwa">
+  <caption name="Eel River Tribe Inc. of Indiana, Lafayette" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Indiana" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2006, but have not sent a petition.  This group incorporated in 2006.  Most members live in the Carroll County area.]]></caption>
+	<pos lat="40.4300" lng="-86.9500" />
+	<pos lat="40.4300" lng="-86.8000" />
+	<pos lat="40.3300" lng="-86.8000" />
+	<pos lat="40.3300" lng="-86.9500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+
+<marker type="Ojibwa">
+  <caption name="Miami Nation, Peru" src="Miami-Headquarters.jpg" state="Indiana" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1980, a documented petition in 1984, but were denied federal recognition in 1992.  Their history is as follows.  A group of Miami families remained in Indiana after the removal period in the 1840s.  They continually sought federal recognition as a tribe entitled to certain rights, and they had a succession of chiefs who pursued these goals.  In the 1870s they had successfully petitioned the secretary of the interior to allot their reservation and put the allotments in trust status (not taxable) until 1881.  They had federal recognition but no Indian agent. In the 1890s, they began to pursue filing a legal claim against the U.S. for treaty violations.  In the 1920s they were still working on claims and organized as the Miami Nation of Indians of Indiana.  The clan system still was central to tribal government.  They unsuccessfully sought to obtain reorganization under the Indian Reorganization Act in the 1930s.  In 1937 they got a state charter for their organization and in 1969 received a monetary award in one of their claims cases.  They continued to work on claims into the 1970s.  Organized as the Miami Nation in 1964, leaders continued to push for federal recognition.  In the 1970s, they had several gatherings, a tribal council (since 1903) representing the family groups, and various cultural and political activities.
+	In 1979 the Miami Nation met and decided to petition the BAR for federal recognition.  In July 1984 (after much work and expense), they submitted their petition.  The next year the BAR responded generally positively but requested more documentation on two of the seven criteria.  After receiving more information, in 1990 the Assistant Secretary for Indian Affairs rejected the petition, maintaining that the Miami did not adequately prove that they had a tribal government since World War II or a contemporary tribal community.  That same year the BIA approved the 4,387-member Miami tribal roll for the purposes of paying a claim. In fact, the Miamis believed that smaller tribes with similar histories had been recognized because they would be less of a financial burden on the government than a tribe of over 4,000. The Miami appealed the decision but in 1992 the appeal was denied.  In 1991 they had begun working with Senator Richard Lugar of Indiana to obtain Congressional recognition.  At first, they had his support, but fears of gaming activity that would undermine the state lottery eventually killed the legislation.  So in 1992 the Miami filed suit in federal court in Indiana but were not successful.  The Miami Nation has purchased land and continues cultural and political activities. They are attempting to gain recognition from the state of Indiana. ]]></caption>
+	<pos lat="40.8200" lng="-86.2000" />
+	<pos lat="40.8200" lng="-86.0500" />
+	<pos lat="40.7200" lng="-86.0500" />
+	<pos lat="40.7200" lng="-86.2000" />
+	<img><![CDATA[Photo courtesy of Stewart Rafert]]></img>
+</marker>
+
+
+<marker type="Ojibwa">
+  <caption name="Upper Kispoko Band of the Shawnee Nation, Kokomo" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Indiana" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1991, but have not sent a petition.]]></caption>
+	<pos lat="40.6500" lng="-86.2500" />
+	<pos lat="40.6500" lng="-86.1000" />
+	<pos lat="40.5500" lng="-86.1000" />
+	<pos lat="40.5500" lng="-86.2500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Wea Indian Tribe, Inc., Lafayette" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Indiana" color="0xff0000" url="" > 
+  <![CDATA[The BAR received a letter of intent to petition in 2007, but no petition has been received.]]></caption>
+	<pos lat="40.4700" lng="-86.9300" />
+	<pos lat="40.4700" lng="-86.7800" />
+	<pos lat="40.3700" lng="-86.7800" />
+	<pos lat="40.3700" lng="-86.9300" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+
+<marker type="Ojibwa">
+  <caption name="Wea Indian Tribe of Indiana, Clinton" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Indiana" color="0xff0000" url="" > 
+  <![CDATA[The BAR also received a letter of intent to petition from this group in 2006.  No petition has been received.]]></caption>
+	<pos lat="39.9000" lng="-87.4500" />
+	<pos lat="39.9000" lng="-87.3000" />
+	<pos lat="39.8000" lng="-87.3000" />
+	<pos lat="39.8000" lng="-87.4500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Indiana ======//-->
+
+
+<!--//====== Michigan ======//-->
+<marker type="Ojibwa">
+  <caption name="Chi-cau-gon Band of Lake Superior Chippewa of Iron County, Iron River" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1998, but have not submitted a petition.]]></caption>
+	<pos lat="46.1500" lng="-88.7000" />
+	<pos lat="46.1500" lng="-88.5500" />
+	<pos lat="46.0500" lng="-88.5500" />
+	<pos lat="46.0500" lng="-88.7000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Consolidated Bahwetig Ojibwas and Mackinac Tribe, Sault St. Marie" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1979, but have not sent a petition.]]></caption>
+	<pos lat="46.5400" lng="-84.4500" />
+	<pos lat="46.5400" lng="-84.3000" />
+	<pos lat="46.4400" lng="-84.3000" />
+	<pos lat="46.4400" lng="-84.4500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Lake Superior Chippewa of Marquette, Inc., Marquette" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1991, but have not sent a petition.]]></caption>
+	<pos lat="46.5000" lng="-89.9000" />
+	<pos lat="46.5000" lng="-89.7500" />
+	<pos lat="46.4000" lng="-89.7500" />
+	<pos lat="46.4000" lng="-89.9000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Little Owl Band of Central Michigan Indians, Sidney" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2000, but have not sent a petition.]]></caption>
+	<pos lat="43.33000" lng="-85.4500" />
+	<pos lat="43.33000" lng="-85.3000" />
+	<pos lat="43.23000" lng="-85.3000" />
+	<pos lat="43.23000" lng="-85.4500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Mackinac Bands of Chippewa and Ottawa Indians, Hessel" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1998.  The members of this group are enrolled in the Sault Ste. Marie tribe, but want independence as a distinct band.  They organized politically in 2009.]]></caption>
+	<pos lat="46.1000" lng="-84.4800" />
+	<pos lat="46.1000" lng="-84.3300" />
+	<pos lat="46.0000" lng="-84.3300" />
+	<pos lat="46.0000" lng="-84.4800" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Maconce Village Band of Ojibwa, Ira Township" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2000, but have sent no petition.]]></caption>
+	<pos lat="42.75000" lng="-82.6500" />
+	<pos lat="42.75000" lng="-82.5000" />
+	<pos lat="42.65000" lng="-82.5000" />
+	<pos lat="42.65000" lng="-82.6500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Maple River Band of Ottawa, Lyons" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2005, but have sent no petition.]]></caption>
+	<pos lat="43.03000" lng="-85.0000" />
+	<pos lat="43.03000" lng="-84.8500" />
+	<pos lat="42.93000" lng="-84.8500" />
+	<pos lat="42.93000" lng="-85.0000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Muskegon River Band of Ottawa Indians, N. Muskegon" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2002, but have sent no petition.]]></caption>
+	<pos lat="43.35000" lng="-86.3500" />
+	<pos lat="43.35000" lng="-86.2000" />
+	<pos lat="43.25000" lng="-86.2000" />
+	<pos lat="43.25000" lng="-86.3500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Ooragnak Indian Nation, Honor" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1999, but have sent no petition.]]></caption>
+	<pos lat="44.7000" lng="-86.2000" />
+	<pos lat="44.7000" lng="-86.0500" />
+	<pos lat="44.6000" lng="-86.0500" />
+	<pos lat="44.6000" lng="-86.2000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Wyandot of Anderdon Nation, Trenton" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Michigan" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2003, but have not sent a petition.]]></caption>
+	<pos lat="42.1500" lng="-83.2500" />
+	<pos lat="42.1500" lng="-83.1000" />
+	<pos lat="42.0500" lng="-83.1000" />
+	<pos lat="42.0500" lng="-83.2500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Michigan ======//-->
+
+
+<!--//====== Minnesota ======//-->
+<marker type="Ojibwa">
+  <caption name="Kah-Bay-Kah-Nong (Warroad Chippewa), Warroad" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Minnesota" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1979, but have not sent a petition. ]]></caption>
+	<pos lat="49.0000" lng="-95.4500" />
+	<pos lat="49.0000" lng="-95.3000" />
+	<pos lat="48.9000" lng="-95.3000" />
+	<pos lat="48.9000" lng="-95.4500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Mendota Mdewakanton Dakota Community, Mendota" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Minnesota" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1996.  These people are descendants of the Métis families living in the village of Mendota during the treaty era.  Many still live in the Mendota area.  They formed an organization of 250 members and, in 2007, agreed to try to pursue recognition as well as to work for Dakota cultural preservation.   They have not yet sent a petition, but have obtained tax-exempt status as a Dakota Community and have engaged in a struggle with the state over historical sites important to them.  They also have sponsored regional powwows.]]></caption>
+	<pos lat="44.9500" lng="-93.3000" />
+	<pos lat="44.9500" lng="-93.1500" />
+	<pos lat="44.8500" lng="-93.1500" />
+	<pos lat="44.8500" lng="-93.3000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Minnesota ======//-->
+
+
+<!--//====== Ohio ======//-->
+<marker type="Ojibwa">
+  <caption name="Alleghenny Nation Indian Center (Ohio Band), Newcomerstown" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1979 and again in 2005.  They have not sent a petition.  They received a charter as the Community Center in Newcomerstown from the state of Ohio. ]]></caption>
+	<pos lat="40.95000" lng="-81.6500" />
+	<pos lat="40.95000" lng="-81.5000" />
+	<pos lat="40.85000" lng="-81.5000" />
+	<pos lat="40.85000" lng="-81.6500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Chickamauga Keetoowah Unami Wolf Band, Cleveland" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[Chickamauga Keetoowah Unami Wolf Band of Cherokee Delaware Shawnee of Ohio/West Virginia/ & Virginia. They sent a letter of intent to petition in 2006, but have sent no petition.]]></caption>
+	<pos lat="41.5000" lng="-81.8000" />
+	<pos lat="41.5000" lng="-81.6500" />
+	<pos lat="41.4000" lng="-81.6500" />
+	<pos lat="41.4000" lng="-81.8000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Lower Eastern Ohio Mekojay Shawnee, Wilmington" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They have sent a letter of intent to petition in 2001, but have sent no petition.]]></caption>
+	<pos lat="39.5000" lng="-83.9500" />
+	<pos lat="39.5000" lng="-83.8000" />
+	<pos lat="39.4000" lng="-83.8000" />
+	<pos lat="39.4000" lng="-83.9500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="North Eastern U. S. Miami Inter-Tribal Council, Youngstown" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1979, but have sent no petition.]]></caption>
+	<pos lat="41.2000" lng="-80.8000" />
+	<pos lat="41.2000" lng="-80.6500" />
+	<pos lat="41.1000" lng="-80.6500" />
+	<pos lat="41.1000" lng="-80.8000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="The Nottoway in Ohio, Xenia" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2008, but have sent no petition.]]></caption>
+	<pos lat="39.7500" lng="-84.1500" />
+	<pos lat="39.7500" lng="-84.0000" />
+	<pos lat="39.6500" lng="-84.0000" />
+	<pos lat="39.6500" lng="-84.1500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Piqua Sept of Ohio Shawnee Indians, North Hampton" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1991, but have sent no petition.]]></caption>
+	<pos lat="40.2000" lng="-83.8500" />
+	<pos lat="40.2000" lng="-83.7000" />
+	<pos lat="40.1000" lng="-83.7000" />
+	<pos lat="40.1000" lng="-83.8500" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Saponi Nation of Ohio, Rio Grande" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1997.  This group has a membership list, but has not sent a petition.]]></caption>
+	<pos lat="38.9500" lng="-82.3000" />
+	<pos lat="38.9500" lng="-82.1500" />
+	<pos lat="38.8500" lng="-82.1500" />
+	<pos lat="38.8500" lng="-82.3000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Shawnee Nation, Ohio Blue Creek Band of Adams County, Lynx" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 1998, but have not sent a petition.]]></caption>
+	<pos lat="38.7500" lng="-83.4000" />
+	<pos lat="38.7500" lng="-83.2500" />
+	<pos lat="38.6500" lng="-83.2500" />
+	<pos lat="38.6500" lng="-83.4000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Tutelo Nahyssan Tribal Nation, Stewart" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2005, but have not sent a petition.]]></caption>
+	<pos lat="39.1500" lng="-82.0000" />
+	<pos lat="39.1500" lng="-81.8500" />
+	<pos lat="39.0500" lng="-81.8500" />
+	<pos lat="39.0500" lng="-82.0000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Tutelo-Saponi Tribal Nation (formerly Pine Hill Saponi), Beavercreek" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2002, but have not sent a petition.]]></caption>
+	<pos lat="39.5500" lng="-84.3000" />
+	<pos lat="39.5500" lng="-84.1500" />
+	<pos lat="39.4500" lng="-84.1500" />
+	<pos lat="39.4500" lng="-84.3000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Ohio ======//-->
+
+
+<!--//====== Wisconsin ======//-->
+<marker type="Ojibwa">
+  <caption name="Brothertown Indian Nation, Fond du Lac" src="Samson-Occom.jpg" state="Wisconsin" color="0xff0000" url="" > 
+  <![CDATA[The Brothertown Indians are descendants of seven Christian Indian towns in Rhode Island, Connecticut, and Long Island, New York.  These people were an amalgamation of New England and Long Island Indians (including Mohegans and Pequots) who had converted to Christianity during the 1740s.  Poverty-stricken, they obtained the permission of the Oneidas to settle on and farm some Oneida land in New York, and moved there in 1775.  The Revolutionary War forced them to flee to Massachusetts, where they joined the Stockbridge Indians.  By 1785 they were back in New York in their town called Brothertown, named by Samson Occom, schoolmaster and Presbyterian minister.  In the early 1800s settlers forced them out.  They decided to migrate to Wisconsin, and delegates (along with Stockbridge and Oneida delegates) traveled to Green Bay in 1821 and 1823 to negotiate with Menominees and Ho-Chunks for some land.  It was not until 1831 and 1832 that treaties were signed that assigned them land—23,000 acres along the eastern shore of Lake Winnebago.  The first Brothertowns arrived at the Wisconsin settlement in 1831, where they owned the land communally.
+	At this time, the federal government was trying to remove Indians from east of the Mississippi.  The Brothertown community became alarmed and decided to secure title to their land so as not to be subject to federal trusteeship, which would make them vulnerable to federal dictates.  Their leaders asked Congress to allot their land to individuals and grant them U. S. citizenship.  In 1839 they became citizens, but did not request dissolution of their tribe.  But at this time dual citizenship was not possible, so the federal government no longer regarded Brothertown a sovereign nation.  Individual land owners could sell their allotments, so land was lost throughout subsequent years.  During the late 19th century, leaders continued to negotiate with the federal government, pressing the tribe’s legal claims arising from the treaty of 1831.  In the 1920s and 1930s they joined with the Oneida and Stockbridge in a land claim suit involving the New York lands.  In 1950 Brothertown filed suit with the Indian Claims Commission and won a judgment award.  At this time they updated their tribal roll.
+	In 1980 the Brothertown community sent a letter of intent to the BAR to petition for federal recognition.  But BAR criteria disqualify tribes that lost federal recognition through Congressional legislation, so they have not obtained recognition.  The Brothertown roll has about 3,000 members.  Most live near Fond du Lac and Lake Winnebago.  They have an elected tribal council and are trying to establish a land base. ]]></caption>
+	<pos lat="43.80000" lng="-88.5200" />
+	<pos lat="43.80000" lng="-88.3700" />
+	<pos lat="43.70000" lng="-88.3700" />
+	<pos lat="43.70000" lng="-88.5200" />
+	<img><![CDATA[Courtesy of Wisconsin Historical Society (WHi-59460)]]></img>
+</marker>
+
+<marker type="Ojibwa">
+  <caption name="Muhheconnuck and Munsee Tribes, Keshena" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Wisconsin" color="0xff0000" url="" > 
+  <![CDATA[They sent a letter of intent to petition in 2003, but have not sent a petition.]]></caption>
+	<pos lat="45.00000" lng="-88.7000" />
+	<pos lat="45.00000" lng="-88.5500" />
+	<pos lat="44.90000" lng="-88.5500" />
+	<pos lat="44.90000" lng="-88.7000" />
+	<img><![CDATA[ Homepage, Office of Federal Acknowledgment ]]></img>
+</marker>
+<!--//====== END: Wisconsin ======//-->
+
+</markers>

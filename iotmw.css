@@ -1,137 +1,282 @@
-    body {
-        font-size: 16px;
-    }
-    a {
-        color: #000;
-    }
-    a:hover {
-        color: #000;
-    }
-    li:hover, .newbNavbar:hover{
-        background: rgba(0,0,0,0.25)
-    }
-    #qDiv-0 #qSpan-0-one,
-    #qDiv-1 #qSpan-1-one,
-    #qDiv-2 #qSpan-2-one,
-    #qDiv-3 #qSpan-3-one,
-    #qDiv-4 #qSpan-4-one,
-    #qDiv-5 #qSpan-5-one,
-    #qDiv-6 #qSpan-6-one {
-        display: inline;
-    }
-    #qSpan-0-two,
-    #qSpan-1-two,
-    #qSpan-2-two,
-    #qSpan-3-two,
-    #qSpan-4-two,
-    #qSpan-5-two,
-    #qSpan-6-two {
-        display: none;
-    }
-    #qDiv-0:hover #qSpan-0-one,
-    #qDiv-1:hover #qSpan-1-one,
-    #qDiv-2:hover #qSpan-2-one,
-    #qDiv-3:hover #qSpan-3-one,
-    #qDiv-4:hover #qSpan-4-one,
-    #qDiv-5:hover #qSpan-5-one,
-    #qDiv-6:hover #qSpan-6-one {
-        display: none;
-    }
-    #qDiv-0:hover #qSpan-0-two,
-    #qDiv-1:hover #qSpan-1-two,
-    #qDiv-2:hover #qSpan-2-two,
-    #qDiv-3:hover #qSpan-3-two,
-    #qDiv-4:hover #qSpan-4-two,
-    #qDiv-5:hover #qSpan-5-two,
-    #qDiv-6:hover #qSpan-6-two {
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 20px;
-        width: initial;
-    }
-    #questions > div {
-        display: inline-block;
-        height: 150px;
-        width: 150px;
-    }
+body {
+    font-size: 16px;
+}
+#bodydiv {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.4);
+    /* opacity: 0.4; */
+    animation: fadein 30s ease 0s;
+    animation-iteration-count: infinite;
+}
+.menu-list {
+    z-index: 2;
+}
+@keyframes fadein{
+    0%, 100% {  background: url(wp1.jpg); }
+    33% {       background: url(wp2.jpg) }
+    66% {       background: url(wp3.jpg) }
+}
 
+a {
+    color: #000;
+}
+a:hover {
+    color: #000;
+}
+li:hover, .newbNavbar:hover{
+    background: rgba(0,0,0,0.25)
+}
 
-    #newberryHome img {
-        height: 40px;
-    }
-    #newberryDigiHome, .contentNavbar, #mainText, #questions {
-        font-family: 'Lato', sans-serif;
-    }
-    #logo, #mainText h2 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+#qSpan-0-two,
+#qSpan-1-two,
+#qSpan-2-two,
+#qSpan-3-two,
+#qSpan-4-two,
+#qSpan-5-two,
+#qSpan-6-two {
+display: none;
+}
+#qDiv-0:hover #qSpan-0-two,
+#qDiv-1:hover #qSpan-1-two,
+#qDiv-2:hover #qSpan-2-two,
+#qDiv-3:hover #qSpan-3-two,
+#qDiv-4:hover #qSpan-4-two,
+#qDiv-5:hover #qSpan-5-two,
+#qDiv-6:hover #qSpan-6-two {
+display: block;
+position: absolute;
+top: 20px;
+left: 20px;
+width: 20vw;
+background: rgba(0,0,0,0.75);
+z-index: 2;
+padding: 10px;
+border: 2px solid #fff;
+}
+#questions {
+border: 1px solid #fff;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: center;
+}
+#questions div {
+flex: 1 0 21%;
+padding: 10px;
+border: 1px solid #fff;
+position: relative;
+font-size: 0.8rem;
+width: 20%;
+}
+#questions > div  {
+text-align: center;
+}
+#questions span  {
+text-align: left;
+}
+@media screen and (max-width: 800px) {
+#questions div {
+    flex: 1 0 34%;
+}
+}
+@media screen and (max-width: 700px) {
+#questions div {
+    flex: 1 0 51%;  
+}
+}
+#questions a {
+padding-top: 10px;
+color: rgba(255,255,255,0.85);
+}
+#questions a:hover {
+color: rgba(255,255,255,1);
+}
+/* header */
+.newberryHome img {
+    height: 40px;
+}
+.newberryDigiHome, .contentNavbar, #mainText, #questions, .menu-list {
+    font-family: 'Lato', sans-serif;
+}
+#logo, #mainText h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.newberryDigiHome, #contentNavList li, .newberryHome {
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+#logo {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#logoText-0, #logoText-3 {
+    font-size: 3rem;
+    line-height: 2rem;
+}
+#logoText-1, #logoText-2 {
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+#logoText-2, #logoText-3 {
+    vertical-align: top;
+}
 
-    #newberryDigiHome, #contentNavList li {
-        text-transform: uppercase;
-    }
-    #logo {
-        text-transform: uppercase;
-        text-align: center;
-    }
-    #logoText-0, #logoText-3 {
-        font-size: 3rem;
-        line-height: 2rem;
-    }
-    #logoText-1, #logoText-2 {
-        font-size: 1.5rem;
-        line-height: 1rem;
-    }
-    #logoText-2, #logoText-3 {
-        vertical-align: top;
-    }
+.newbNavbar {
+    height: 50px;
+}
+.newbNavbar:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
 
-    .newbNavbar {
-        height: 50px;
-    }
-    .newbNavbar:before {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        height: 100%;
-    }
+.newbNavbar a, .menuButton {
+    display: inline-block;
+    vertical-align: middle;
+}
+.contentNavbar {
+    text-align: center;
+}
+#contentNavList {
+    display: flex;
+    width: 80%;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    list-style-type: none;
+    padding: 0;
+    margin: 15px auto;
+}
+#contentNavList li {
+    padding: 15px 5px 5px 5px;
+    display: inline-block;
+    height: 50px;
+    overflow: wrap;
+    width: 12%;
+    text-align: center;
+    vertical-align: top; 
+}
+#contentNavMenu {
+    display: none;
+    position: absolute;
 
-    .newbNavbar a {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .contentNavbar {
-        text-align: center;
-    }
-    #contentNavList {
-        width: 80%;
-        border-top: 1px solid black;
-        border-top: 1px solid rgba(0,0,0,0.5);
-        list-style-type: none;
-        padding: 0;
-        margin: 15px auto;
-    }
-    #contentNavList li {
-        padding: 15px 0 0 0;
-        display: inline-block;
-        height: 50px;
-        overflow: wrap;
-        width: 12%;
-        text-align: center;
-        vertical-align: top; 
-    }
+}
+/* body */
+main {
+    color: #fff;
+    width: 65%;
+    margin: 30px 27% 0 8%;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.75); 
+}
+@media screen and (min-width: 1200px) {
     main {
-        color: #fff;
         width: 42%;
         margin: 0 42% 0 12%;
-        padding: 1rem;;
-        background: rgba(0,0,0,0.75); 
     }
-    main h2 {
-        margin: 0;
-        font-size: 2rem;
+}
+@media screen and (min-width: 800px) {
+    .menuButton {
+        display: none;
     }
-    #questions div{
-        border: 2px solid white;
-        position: relative;
+    .contentNavbar {
+        display: flex;
     }
+}
+@media screen and (max-width: 800px) {
+    .menuButton {
+        display: inline-block;
+    }
+    .contentNavbar {
+        display: none;
+    }
+    main {
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+main h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.menuButton {
+    position: absolute;
+    right: 18px;
+    top: 13px;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hide {
+    z-index: -1;
+    opacity: 0;
+}
+.menu-list {
+    background-color: rgba(0,0,0,0.7);
+    margin: 5px;
+    padding: 3px;
+    color: white;
+    list-style-type: none;
+    position: absolute;
+    top: 63px;
+    right: 10px;
+}
+.menu-list li:hover {
+    background-color: black;
+}
+.menu-list a {
+    text-transform: uppercase;
+    padding: 5px;
+    display: block;
+    height: 2rem;
+    color: white;
+    line-height: 2rem;
+    text-decoration: none;
+}
+.credits {
+    display: flex;
+align-items: center;
+justify-content: center;
+    height: 50px;
+    padding: 5px;
+    margin: 10px auto;
+}
+.credainer {
+    width: 75%;
+}
+.credits:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+.credits a {
+    /* align-self: flex-start; */
+    width: 50%;
+}
+.credits img {
+    height: 40px;
+} 
