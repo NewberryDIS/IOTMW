@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+<style>
+  #map {
+            height: 100%; 
+            width: 100%;   
+        }
+ li {
+   height: 30px;
+   width: 50%;
+   list-style: none;
+   cursor: pointer;
+   border: 1px solid transparent;
+ }
+
+ li:hover {
+   border: 1px solid black;
+ }
+</style>
+
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Maps Demo</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Select Map XML</span>
+          <nav class="mdl-navigation">
+            <ul>
+                <li onClick="mapThis('xml/mapdata2.BU20110117.xml')" title="item1">1</li>
+                <li onClick="mapThis('xml/mapdata2.OLD.xml')" title="item2">2</li>
+                <li onClick="mapThis('xml/mapdata2.v1.0.xml')" title="item3">3</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.0.xml')" title="item4">4</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.1.xml')" title="item5">5</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.1.xml.~1~')" title="item6">6</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.2.xml')" title="item7">7</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.2.xml.~1~')" title="item8">8</li>
+                <li onClick="mapThis('xml/mapdata2.ver-1.3.xml')" title="item9">9</li>
+                <li onClick="mapThis('xml/mapdata2.xml')" title="item10">10</li>
+                <li onClick="mapThis('xml/mapdata2.xml.~1~')" title="item11">11</li>
+                <li onClick="mapThis('xml/mapdata2.xml.~2~')" title="item12">12</li>
+                <li onClick="mapThis('xml/mapdata2.xml.~3~')" title="item13">13</li>
+                <li onClick="mapThis('xml/mapdata.BU20110117.xml')" title="item14">14</li>
+                <li onClick="mapThis('xml/mapdata.BU20110721.xml')" title="item15">15</li>
+                <li onClick="mapThis('xml/mapdata.BU20110725.xml')" title="item16">16</li>
+                <li onClick="mapThis('xml/mapdata.BU20110725.xml.~1~')" title="item17">17</li>
+                <li onClick="mapThis('xml/mapdata-v1.3.js')" title="item18">18</li>
+                <li onClick="mapThis('xml/mapdata.xml')" title="item19">19</li>
+                <li onClick="mapThis('xml/mapdata.xml.~1~')" title="item20">20</li>
+                <li onClick="mapThis('xml/mapdata.xml.~2~')" title="item21">21</li>
+                <li onClick="mapThis('xml/mapdata.xml.~3~')" title="item22">22</li>
+                <li onClick="mapThis('xml/mapdata.xml.~4~')" title="item23">23</li>
+
+            </ul>
+
+          </nav>
+        </div>
+        <main class="mdl-layout__content" id="mapContainer">
+          <div id="map" class="page-content">some stuff</div>
+        </main>
+      </div>
+</body>
+<script> 
+    var parsedXml;
+    function mapThis(xml) {
+      $.ajax({
+          url: xml,
+          dataType: "xml",
+          success: xmlParser
+      });
+     
+    // Append "RSS Title" to #someElement
+     
+     
+    // Append "XML Title" to #anotherElement
+    // $( "#anotherElement" ).append( $title.text() );
+      }
+function xmlParser(xml) {
+  initmap();
+  $(xml).find("marker").each(function () {
+    $(this).find("caption").each(function(){
+              var text = $(this).text();
+              var lat = $(this).attr('lat');
+              var lng = $(this).attr('lng');
+              var name = $(this).attr('name');
+              console.log(text);
+              var coords = [];
+              coords.push(lat);
+              coords.push(lng);
+              markerMaker(coords, name, text);
+            });
+
+
+          // $mark = $(mark);
+    // $caption = $mark.find('caption');
+    // lat = $caption.attr('lat');
+    // lng = $caption.attr('lng');
+    // console.log(lat);
+    // var coords = [];
+    // coords.push(lat);
+    // coords.push(lng);
+
+    });
+}
+function markerMaker(coords, name, text){
+  console.log(name);
+  L.marker(coords).addTo(map).bindPopup("<b>" + name + "</b><br /><p>" + text + "</p>" );
+}
+function polygonMaker(data, content){
+  L.polygon(data).addTo(map).bindPopup(content, { maxWidth: 500, maxHeight: 500});
+}
+function popupContent(caption, type, img, index){
+  var imgUrl = 'images/' + caption.src;
+  return  '<div class="mappopupDiv">' + 
+    '<figure class="mappopupFig" id="popupimg"  onclick="lightbox(' + index + ')"><img src="' + imgUrl + '" alt="" /><figcaption>' + img.cdata + '</figcaption></figure>' + 
+    '<h3 class="mappopupTitle">' + type + '</h3>' + 
+    '<h4 class="mappopupTitleTwo"><a href="' + caption.url + '">' + caption.name + '</a></h4>' + 
+    '<h4 class="mappopupTitleThree">' + caption.state + '</h4>' + 
+    '<p class="mappopupText">' + caption.cdata + '</p>' + 
+    '</div>';
+}
+
+
+
+function initmap() {
+    clearMap();
+    map = new L.Map('map');
+    var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});		
+    map.setView(new L.LatLng(46.060254, -88.633888),7);
+    map.addLayer(osm);
+}
+function clearMap() {
+  if(map != undefined || map != null){
+    map.remove();
+   $("#map").html("");
+   $("#mapContainer").empty();
+   $( '<div id="map"></div>' ).appendTo("#mapContainer");
+}
+}
+
+</script>
+</html>
