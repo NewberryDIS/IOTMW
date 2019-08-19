@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -19,131 +18,125 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-<style>
-  #map {
+    <style>
+        #map {
             height: 100%; 
             width: 100%;   
         }
- li {
-   height: 30px;
-   width: 50%;
-   list-style: none;
-   cursor: pointer;
-   border: 1px solid transparent;
- }
-
- li:hover {
-   border: 1px solid black;
- }
-</style>
-
+        ul {
+            padding-left: 5px;
+        }
+        li {
+            height: 30px;
+            width: 100%;
+            list-style: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            padding-left: 0;
+        }
+        li:hover, .active {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
-          <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">Maps Demo</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation. We hide it in small screens. -->
-          </div>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Maps Demo</span>
+            </div>
         </header>
         <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Select Map XML</span>
-          <nav class="mdl-navigation">
-            <ul>
-                <li onClick="mapThis('xml/mapdata2.BU20110117.xml')" title="item1">1</li>
-                <li onClick="mapThis('xml/mapdata2.OLD.xml')" title="item2">2</li>
-                <li onClick="mapThis('xml/mapdata2.v1.0.xml')" title="item3">3</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.0.xml')" title="item4">4</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.1.xml')" title="item5">5</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.1.xml.~1~')" title="item6">6</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.2.xml')" title="item7">7</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.2.xml.~1~')" title="item8">8</li>
-                <li onClick="mapThis('xml/mapdata2.ver-1.3.xml')" title="item9">9</li>
-                <li onClick="mapThis('xml/mapdata2.xml')" title="item10">10</li>
-                <li onClick="mapThis('xml/mapdata2.xml.~1~')" title="item11">11</li>
-                <li onClick="mapThis('xml/mapdata2.xml.~2~')" title="item12">12</li>
-                <li onClick="mapThis('xml/mapdata2.xml.~3~')" title="item13">13</li>
-                <li onClick="mapThis('xml/mapdata.BU20110117.xml')" title="item14">14</li>
-                <li onClick="mapThis('xml/mapdata.BU20110721.xml')" title="item15">15</li>
-                <li onClick="mapThis('xml/mapdata.BU20110725.xml')" title="item16">16</li>
-                <li onClick="mapThis('xml/mapdata.BU20110725.xml.~1~')" title="item17">17</li>
-                <li onClick="mapThis('xml/mapdata-v1.3.js')" title="item18">18</li>
-                <li onClick="mapThis('xml/mapdata.xml')" title="item19">19</li>
-                <li onClick="mapThis('xml/mapdata.xml.~1~')" title="item20">20</li>
-                <li onClick="mapThis('xml/mapdata.xml.~2~')" title="item21">21</li>
-                <li onClick="mapThis('xml/mapdata.xml.~3~')" title="item22">22</li>
-                <li onClick="mapThis('xml/mapdata.xml.~4~')" title="item23">23</li>
-
-            </ul>
-
-          </nav>
+            <span class="mdl-layout-title">Select Map XML</span>
+            <nav class="mdl-navigation">
+                <ul>
+                    <li onClick="mapThis(this, 'xml/mapdata.xml')">1. mapdata.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.xml.~1~')">2. mapdata.xml.~1~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.xml.~2~')">3. mapdata.xml.~2~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.xml.~3~')">4. mapdata.xml.~3~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.xml.~4~')">5. mapdata.xml.~4~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.xml')">6. mapdata2.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.xml.~1~')">7. mapdata2.xml.~1~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.xml.~2~')">8. mapdata2.xml.~2~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.xml.~3~')">9. mapdata2.xml.~3~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.OLD.xml')">10. mapdata2.OLD.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.v1.0.xml')">11. mapdata2.v1.0.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.0.xml')">12. mapdata2.ver-1.0.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.1.xml')">13. mapdata2.ver-1.1.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.1.xml.~1~')">14. mapdata2.ver-1.1.xml.~1~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.2.xml')">15. mapdata2.ver-1.2.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.2.xml.~1~')">16. mapdata2.ver-1.2.xml.~1~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.ver-1.3.xml')">17. mapdata2.ver-1.3.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.BU20110117.xml')">18. mapdata.BU20110117.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.BU20110721.xml')">19. mapdata.BU20110721.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.BU20110725.xml')">20. mapdata.BU20110725.xml</li>
+                    <li onClick="mapThis(this, 'xml/mapdata.BU20110725.xml.~1~')">21. mapdata.BU20110725.xml.~1~</li>
+                    <li onClick="mapThis(this, 'xml/mapdata2.BU20110117.xml')">22. mapdata2.BU20110117.xml</li>
+                </ul>
+            </nav>
         </div>
         <main class="mdl-layout__content" id="mapContainer">
-          <div id="map" class="page-content">some stuff</div>
+            <div id="map" class="page-content">some stuff</div>
         </main>
       </div>
 </body>
 <script> 
     var parsedXml;
-    function mapThis(xml) {
-      $.ajax({
-          url: xml,
-          dataType: "xml",
-          success: xmlParser
-      });
-     
-    // Append "RSS Title" to #someElement
-     
-     
-    // Append "XML Title" to #anotherElement
-    // $( "#anotherElement" ).append( $title.text() );
-      }
+    function mapThis(el, xml) {
+        $('li').removeClass('active');
+        $(el).addClass('active');
+        $.ajax({
+            url: xml,
+            dataType: "xml",
+            success: xmlParser,
+            error: function(XMLHttpRequest, textStatus, errorThrown) { 
+                console.log("Status: " + textStatus); console.log("Error: " + errorThrown); 
+            } 
+        });
+    }
 function xmlParser(xml) {
-  initmap();
-  $(xml).find("marker").each(function () {
-    $(this).find("caption").each(function(){
-              var text = $(this).text();
-              var lat = $(this).attr('lat');
-              var lng = $(this).attr('lng');
-              var name = $(this).attr('name');
-              console.log(text);
-              var coords = [];
-              coords.push(lat);
-              coords.push(lng);
-              markerMaker(coords, name, text);
+    initmap();
+    $(xml).find("marker").each(function () {
+        if ($(this).find('pos').length > 0) {
+            var caption = $(this).find("caption");
+            var text = $(caption).text();
+            var name = $(caption).attr('name');
+            var coords = [];
+            $(this).find('pos').each(function(){
+                var coord = [], 
+                coord = [$(this).attr('lat'), $(this).attr('lng')];
+                coords.push(coord);
             });
-
-
-          // $mark = $(mark);
-    // $caption = $mark.find('caption');
-    // lat = $caption.attr('lat');
-    // lng = $caption.attr('lng');
-    // console.log(lat);
-    // var coords = [];
-    // coords.push(lat);
-    // coords.push(lng);
-
+            polygonMaker(coords, name, text);
+        } else {
+            $(this).find("caption").each(function(){
+                var text = $(this).text();
+                var lat = $(this).attr('lat');
+                var lng = $(this).attr('lng');
+                var name = $(this).attr('name');
+                var coords = [];
+                coords.push(lat);
+                coords.push(lng);
+                markerMaker(coords, name, text);
+            });
+        }
     });
 }
 function markerMaker(coords, name, text){
-  console.log(name);
-  L.marker(coords).addTo(map).bindPopup("<b>" + name + "</b><br /><p>" + text + "</p>" );
+    L.marker(coords).addTo(map).bindPopup("<b>" + name + "</b><br /><p>" + text + "</p>" );
 }
-function polygonMaker(data, content){
-  L.polygon(data).addTo(map).bindPopup(content, { maxWidth: 500, maxHeight: 500});
+function polygonMaker(coords, name, text){
+    L.polygon(coords).addTo(map).bindPopup("<b>" + name + "</b><br /><p>" + text + "</p>" , { maxWidth: 500, maxHeight: 500});
 }
 function popupContent(caption, type, img, index){
-  var imgUrl = 'images/' + caption.src;
-  return  '<div class="mappopupDiv">' + 
-    '<figure class="mappopupFig" id="popupimg"  onclick="lightbox(' + index + ')"><img src="' + imgUrl + '" alt="" /><figcaption>' + img.cdata + '</figcaption></figure>' + 
-    '<h3 class="mappopupTitle">' + type + '</h3>' + 
-    '<h4 class="mappopupTitleTwo"><a href="' + caption.url + '">' + caption.name + '</a></h4>' + 
-    '<h4 class="mappopupTitleThree">' + caption.state + '</h4>' + 
-    '<p class="mappopupText">' + caption.cdata + '</p>' + 
-    '</div>';
+    var imgUrl = 'images/' + caption.src;
+    return  '<div class="mappopupDiv">' + 
+        '<figure class="mappopupFig" id="popupimg"  onclick="lightbox(' + index + ')"><img src="' + imgUrl + '" alt="" /><figcaption>' + img.cdata + '</figcaption></figure>' + 
+        '<h3 class="mappopupTitle">' + type + '</h3>' + 
+        '<h4 class="mappopupTitleTwo"><a href="' + caption.url + '">' + caption.name + '</a></h4>' + 
+        '<h4 class="mappopupTitleThree">' + caption.state + '</h4>' + 
+        '<p class="mappopupText">' + caption.cdata + '</p>' + 
+        '</div>';
 }
 
 
@@ -158,12 +151,12 @@ function initmap() {
     map.addLayer(osm);
 }
 function clearMap() {
-  if(map != undefined || map != null){
-    map.remove();
-   $("#map").html("");
-   $("#mapContainer").empty();
-   $( '<div id="map"></div>' ).appendTo("#mapContainer");
-}
+    if(map != undefined || map != null){
+        map.remove();
+        $("#map").html("");
+        $("#mapContainer").empty();
+        $( '<div id="map"></div>' ).appendTo("#mapContainer");
+    }
 }
 
 </script>

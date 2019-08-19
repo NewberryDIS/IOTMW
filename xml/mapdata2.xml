@@ -216,7 +216,7 @@ Longitude = left/right
 
 <marker type="Ojibwa">
   <caption name="Chickamauga Keetoowah Unami Wolf Band, Cleveland" src="Office-of-Federal-Acknowledgement-v2.jpg" state="Ohio" color="0xff0000" url="" > 
-  <![CDATA[Chickamauga Keetoowah Unami Wolf Band of Cherokee Delaware Shawnee of Ohio/West Virginia/ & Virginia. They sent a letter of intent to petition in 2006, but have sent no petition.]]></caption>
+  <![CDATA[Chickamauga Keetoowah Unami Wolf Band of Cherokee Delaware Shawnee of Ohio/West Virginia/ &amp; Virginia. They sent a letter of intent to petition in 2006, but have sent no petition.]]></caption>
 	<pos lat="41.5000" lng="-81.8000" />
 	<pos lat="41.5000" lng="-81.6500" />
 	<pos lat="41.4000" lng="-81.6500" />
