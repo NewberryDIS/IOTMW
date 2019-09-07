@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+</head>
+<body>
+    <div id="map" style="height: 300px; width: 300px;"></div>
+    <div class="caption" id="contentTarget">
+
+    <h2 id="title"></h2>
+    <img id="image" />
+    <p id="mainContent"></p>
+    <a id="linkOne"></a>
+    <a id="linkTwo"></a>
+    </div>
+    <script>
+        var map;
+var ajaxRequest;
+var plotlist;
+var plotlayers=[];
+var latt, longg, name, img, content;
+var name1, url1, name2, url2, linkContent
+function initmap() {
+	// set up the map
+	map = new L.Map('map');
+
+	// create the tile layer with correct attribution
+	var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+	var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});		
+
+	// start the map in South-East England
+	map.setView(new L.LatLng(41.900062, -87.630642),5);
+    map.addLayer(osm);
+    var marker = L.marker([latt, longg]).addTo(map);
+}
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+       myFunction(this);
+   }
+};
+xhttp.open("GET", "loc.xml", true);
+xhttp.send();
+function myFunction(xml) {
+    var x;
+    x = xml.responseXML.getElementsByTagName('caption');
+        latt = x[0].getAttribute('lat');
+        longg = x[0].getAttribute('lng');
+        caption = x[0].textContent.toString()
+        img = x[0].getAttribute('src');
+        name = x[0].getAttribute('name');
+    y = xml.responseXML.getElementsByTagName('visitor');
+        name1 = y[0].getAttribute('name');
+        url1 = y[0].getAttribute('url');
+        name2 = y[0].getAttribute('name2');
+        url2 = y[0].getAttribute('url2');
+    initmap();
+    var stuffer  = document.querySelector('#title');
+    stuffer.appendChild( document.createTextNode(name));
+    // var stuffer  = document.querySelector('#image');
+    // stuffer.appendChild( document.createTextNode(img));
+    var stuffer  = document.querySelector('#mainContent');
+    stuffer.appendChild( document.createTextNode(caption));
+    var stuffer  = document.querySelector('#linkOne');
+    stuffer.appendChild( document.createTextNode(name1));
+    stuffer.href = (url1.startsWith('http') ? url1 : 'http://' + url1 );
+    var stuffer  = document.querySelector('#linkTwo');
+    stuffer.appendChild( document.createTextNode(name2));
+    stuffer.href = (url2.startsWith('http') ? url2 : 'http://' + url2 ) ;
+    
+}
+    </script>
+
+
+</body>
+</html>

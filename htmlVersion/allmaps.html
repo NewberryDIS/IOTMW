@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>all maps</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="xml/mapdata-v1.3.js"></script>
+    <style>
+        body {
+            height: 98vh; 
+            width: 98vw; 
+            margin: 1vh 1vw;
+        }
+        #modal {
+            z-index: 10000;
+            display: none;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.75);            
+        }
+        .image-container {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        .image-container figure  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        .modalFigImage {
+            padding: 20px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .image-container figcaption {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            padding: 10px;
+            color: #fff;
+        }
+        #map {
+            height: 100%; 
+            width: 100%;   
+        }
+        .mappopupFig {
+            padding: 0 3px 0 10px;
+            margin: auto;
+            width: 200px;
+            /* height: 250px; */
+            float: right;
+            overflow: auto;
+            max-height: 225px;
+        }
+        .mappopupFig img { 
+            height: 150px;
+            width: 150px;
+        }
+        .mappopupFig figcaption {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal" onclick="modal()"></div>
+    <div id="buttons"></div>
+    <div id="map"></div>
+    <script>
+        function initmap() {
+            map = new L.Map('map');
+            var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+            var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});		
+            map.setView(new L.LatLng(46.060254, -88.633888),7);
+            map.addLayer(osm);
+        }
+        initmap();
+        mapData.forEach(function(mark, index){
+            var content = popupContent(mark.caption, mark.type, (mark.img ? mark.img : ''), index);
+            var coords = [];
+            if(mark.pos.length > 1){
+                mark.pos.forEach(function(p,i){
+                    var tempArray = [p.lat, p.lng]
+                    coords.push(tempArray);
+                })
+                polygonMaker(coords, content);
+            } else {
+                markerMaker(coords, content);
+            }
+            
+        })
+        function markerMaker(data, content){
+            console.log(data);
+            L.marker(data).addTo(map).bindPopup("<b>Hello world!</b><br>I am a popup.");
+        }
+        function polygonMaker(data, content){
+            L.polygon(data).addTo(map).bindPopup(content, { maxWidth: 500, maxHeight: 500});
+        }
+        function popupContent(caption, type, img, index){
+            var imgUrl = 'images/' + caption.src;
+            return  '<div class="mappopupDiv">' + 
+                    '<figure class="mappopupFig" id="popupimg"  onclick="lightbox(' + index + ')"><img src="' + imgUrl + '" alt="" /><figcaption>' + img.cdata + '</figcaption></figure>' + 
+                    '<h3 class="mappopupTitle">' + type + '</h3>' + 
+                    '<h4 class="mappopupTitleTwo"><a href="' + caption.url + '">' + caption.name + '</a></h4>' + 
+                    '<h4 class="mappopupTitleThree">' + caption.state + '</h4>' + 
+                    '<p class="mappopupText">' + caption.cdata + '</p>' + 
+                    '</div>';
+        }
+        function lightbox(i){
+            console.log("click");
+            var imgContainer = '<div class="image-container">' + 
+                    '<figure>' + 
+                        '<img class="modalFigImage" src="images/' + mapData[i].caption.src + '" alt="">' + 
+                        '<figcaption>' + mapData[i].img.cdata + '</figcaption></img>' + 
+                    '</figure>' + 
+                '</div>'; 
+            $('#modal').show().empty().append(imgContainer);
+        }
+        function modal(){
+            $('#modal').hide();
+        }
+    </script>
+</body>
+</html>
