@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/IOTMW/static/css/main.1539777b.chunk.css",
+    "main.js": "/IOTMW/static/js/main.1940b3b2.chunk.js",
+    "main.js.map": "/IOTMW/static/js/main.1940b3b2.chunk.js.map",
+    "runtime~main.js": "/IOTMW/static/js/runtime~main.421bbc59.js",
+    "runtime~main.js.map": "/IOTMW/static/js/runtime~main.421bbc59.js.map",
+    "static/js/2.2129865d.chunk.js": "/IOTMW/static/js/2.2129865d.chunk.js",
+    "static/js/2.2129865d.chunk.js.map": "/IOTMW/static/js/2.2129865d.chunk.js.map",
+    "index.html": "/IOTMW/index.html",
+    "precache-manifest.df52180e0e6ef15bd82e8cd21dbc1d90.js": "/IOTMW/precache-manifest.df52180e0e6ef15bd82e8cd21dbc1d90.js",
+    "service-worker.js": "/IOTMW/service-worker.js",
+    "static/css/main.1539777b.chunk.css.map": "/IOTMW/static/css/main.1539777b.chunk.css.map",
+    "static/media/iotmw-identities.jpg": "/IOTMW/static/media/iotmw-identities.a25e1dc0.jpg",
+    "static/media/iotmw-indian-imagery.jpg": "/IOTMW/static/media/iotmw-indian-imagery.a18242c9.jpg",
+    "static/media/iotmw-people-places-time.jpg": "/IOTMW/static/media/iotmw-people-places-time.b5369e3f.jpg",
+    "static/media/iotmw-property.jpg": "/IOTMW/static/media/iotmw-property.11c34f29.jpg",
+    "static/media/iotmw-the-homeland-its-use.jpg": "/IOTMW/static/media/iotmw-the-homeland-its-use.91c38ccf.jpg",
+    "static/media/iotmw-the-marketplace.jpg": "/IOTMW/static/media/iotmw-the-marketplace.eb86ce1a.jpg",
+    "static/media/iotmw-treaties.jpg": "/IOTMW/static/media/iotmw-treaties.8906277e.jpg",
+    "static/media/index.css": "/IOTMW/static/media/wp.83d850ad.png"
+  }
+}
