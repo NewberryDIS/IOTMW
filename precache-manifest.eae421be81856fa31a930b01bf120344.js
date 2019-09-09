@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abe5aa707240d5b30e3ee1af3be8efb5",
+    "revision": "2f008eb703df57e8e0378d1b9eafc407",
     "url": "/IOTMW/index.html"
   },
   {
