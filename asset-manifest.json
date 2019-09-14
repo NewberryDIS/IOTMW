@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/IotMW/static/css/main.3eacface.chunk.css",
-    "main.js": "/IotMW/static/js/main.8c0bc1fc.chunk.js",
-    "main.js.map": "/IotMW/static/js/main.8c0bc1fc.chunk.js.map",
+    "main.js": "/IotMW/static/js/main.2ea36544.chunk.js",
+    "main.js.map": "/IotMW/static/js/main.2ea36544.chunk.js.map",
     "runtime~main.js": "/IotMW/static/js/runtime~main.c512fc85.js",
     "runtime~main.js.map": "/IotMW/static/js/runtime~main.c512fc85.js.map",
     "static/js/2.2129865d.chunk.js": "/IotMW/static/js/2.2129865d.chunk.js",
     "static/js/2.2129865d.chunk.js.map": "/IotMW/static/js/2.2129865d.chunk.js.map",
     "index.html": "/IotMW/index.html",
-    "precache-manifest.5ecc8ae65da1ff458a7dc6a99e06f070.js": "/IotMW/precache-manifest.5ecc8ae65da1ff458a7dc6a99e06f070.js",
+    "precache-manifest.14b923062cb79305affe0b3be8c29f0b.js": "/IotMW/precache-manifest.14b923062cb79305affe0b3be8c29f0b.js",
     "service-worker.js": "/IotMW/service-worker.js",
     "static/css/main.3eacface.chunk.css.map": "/IotMW/static/css/main.3eacface.chunk.css.map",
     "static/media/iotmw-identities.jpg": "/IotMW/static/media/iotmw-identities.a25e1dc0.jpg",
