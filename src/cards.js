@@ -25,6 +25,7 @@ const Listitem = styled.li`
     font-style: italic;
     // font-size: 1.1rem;
     font-weight: 900;
+    cursor: pointer;
     padding: 25px;
     margin: 5px 0;
     border: 2px solid white;

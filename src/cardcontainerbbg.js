@@ -20,31 +20,16 @@ const List = styled.ul`
     justify-content: space-evenly;
     align-content: space-evenly;
 `
-const Listitem = styled.li`
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    // font-size: 1.1rem;
-    font-weight: 900;
-    padding: 25px;
-    margin: 5px 0;
-    border: 2px solid white;
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0.15);
-    color: white;
-    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
-    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
-    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
-`
 const Closer = styled.div`
     font-style: normal;
-    position: fixed;
-    top: 5px;
-    right: 5px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
     cursor: pointer;
     padding: 5px 10px;
     font-weight: 900;
     border-radius: 8px;
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0,0,0,1);
     border: 2px solid white;
     color: white;
     font-size: 2rem;
@@ -55,22 +40,21 @@ const Closer = styled.div`
         content: "\u274C";
     }
 `
+const images = {
+    'identities': identities,
+    'indian-imagery': indianimagery,
+    'people-places-time': peopleplacestime,
+    'property': property,
+    'the-homeland-its-use': thehomelanditsuse,
+    'the-marketplace': themarketplace,
+    'treaties': treaties
+}
 function Modal(props) {
-    const images = {
-        'identities': identities,
-        'indian-imagery': indianimagery,
-        'people-places-time': peopleplacestime,
-        'property': property,
-        'the-homeland-its-use': thehomelanditsuse,
-        'the-marketplace': themarketplace,
-        'treaties': treaties
-    }
     return (
         <div css={css`
             font-style: italic;
             font-size: 1.1rem;
             font-weight: 400;
-
             position: fixed;
             top: 0;
             left: 0;
@@ -93,14 +77,15 @@ function Modal(props) {
                 box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.15);
 
                 display: flex;
-                overflow: hidden;
+                // overflow: hidden;
                 flex-direction: column;
                 & a {
                     color: white;
                     // font-size: 1.02rem;
                     font-weight: 900;
                 }
-            `}>
+            `}><Closer />
+            
                 <div  css={css`
                     flex: 300px;
                     height: 300px;
@@ -123,11 +108,10 @@ function Modal(props) {
                     </p>
                     <p css={css`
                         flex: 1;
-
-                    font-family: 'Libre Baskerville', serif;
-                    font-size: 0.9rem;
-                    font-weight: 100;
-                    font-style: normal;
+                        font-family: 'Libre Baskerville', serif;
+                        font-size: 0.9rem;
+                        font-weight: 100;
+                        font-style: normal;
                         & a {
                             text-decoration: underline;
                         }
@@ -166,7 +150,40 @@ export default class Cardcontainer extends React.Component {
             `}>
                 <List>
                     {Menucontent.map((item, index) => 
-                        index < 7 ? <Listitem key={index} answer={item[3]} css={css`flex-basis: 17%;`} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal content={this.state.content}  />,<Closer />]}</Listitem> : ''
+                        index < 7 && <li key={index} css={css`
+                        position: relative;
+                            flex-basis: 17%;
+                            @media only screen and (max-width: 900px) { flex-basis: 30%;}
+                            @media only screen and (max-width: 600px) { flex-basis: 70%;}
+                            font-family: 'Lato', sans-serif;
+                            font-style: italic;
+                            // font-size: 1.1rem;
+                            font-weight: 900;
+                            cursor: pointer;
+                            padding: 25px;
+                            margin: 5px 0;
+                            border: 2px solid white;
+                            border-radius: 4px;
+                            background-color: rgba(0,0,0,0.05);
+                            color: white;
+                            -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
+                            -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
+                            box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.65);
+                            &::after {
+                                content: "";
+                                background-image: url('${images[Menucontent[index][0]]}');
+                                background-position: center;
+
+                                opacity: 1;
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                right: 0;
+                                position: absolute;
+                                z-index: -1;   
+                              }
+                        
+                        `} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal content={this.state.content}  />]}</li>
                     )}
                 </List>
             </div>

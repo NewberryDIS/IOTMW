@@ -26,6 +26,7 @@ const Listitem = styled.li`
     // font-size: 1.1rem;
     font-weight: 900;
     padding: 25px;
+    cursor: pointer;
     margin: 5px 0;
     border: 2px solid white;
     border-radius: 4px;
@@ -166,7 +167,7 @@ export default class Cardcontainer extends React.Component {
             `}>
                 <List>
                     {Menucontent.map((item, index) => 
-                        index < 7 ? <Listitem key={index} answer={item[3]} css={css`flex-basis: 17%;`} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal content={this.state.content}  />,<Closer />]}</Listitem> : ''
+                        index < 7 ? <Listitem key={index} answer={item[3]} css={css`flex-basis: 40%;`} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal content={this.state.content}  />,<Closer />]}</Listitem> : ''
                     )}
                 </List>
             </div>

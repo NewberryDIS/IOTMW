@@ -2,6 +2,8 @@ import React from 'react';
 // import Corecontent from './corecontent'
 import Menu from './menu'
 import styled from "@emotion/styled";
+/** @jsx jsx */
+import { css, jsx, Global } from '@emotion/core';
 import Cardcontainerbbg from './cardcontainerbbg'
 
 const Corecontent  = styled.div`
@@ -15,19 +17,20 @@ const Corecontent  = styled.div`
     font-family: 'Lato', sans-serif;
     // flex: 2;
     width: 75%;
+    @media only screen and (max-width: 900px) { width: 100%;}
     color: white;
     padding: 20px;
-    margin: 10px
+    margin: 10px auto;
     display: inline-block;
     & h2 {
         font-family: 'Libre Baskerville', serif;
     }
 `
 const Main = styled.div`
-    // display: inline-block;
     width: 75%;
     margin: 0 auto 60px auto;
-    overflow: visible;
+    // overflow: visible;
+    @media only screen and (max-width: 800px) { width: 85%; margin: 20px auto;}
 `
 const Title = styled.h1`
     margin: 0;
@@ -45,7 +48,20 @@ export default class ContentPage extends React.Component {
     render(){
         return (
             <div>
-                <div>
+                <Global styles={css`
+                 .big {
+                        font-size: 3rem;
+                        line-height: 2rem;
+                    }
+                    .sm {
+                        font-size: 1.5rem;
+                        line-height: 1rem;
+                    }
+                    .bot {
+                        vertical-align: top;
+                    }
+                `}/>
+                <div css={css`padding-top: 2rem;`}>
                     <Title>
                         <span className="big top">Indians</span>
                         <span className="sm top">of</span>
