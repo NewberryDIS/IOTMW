@@ -20,26 +20,40 @@ const List = styled.ul`
     justify-content: space-evenly;
     align-content: space-evenly;
 `
-const Closer = styled.div`
-    font-style: normal;
+const Ecks = () => {return(<div css={css`
     position: absolute;
-    top: -20px;
-    right: -20px;
-    cursor: pointer;
-    padding: 5px 10px;
-    font-weight: 900;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: rgba(0,0,0,1);
     border: 2px solid white;
-    color: white;
-    font-size: 2rem;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.15);
     box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.15);
-    &::after {
-        content: "\u274C";
-    }
-`
+    color: white;
+    right: 3px;
+    top: 3px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  }
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+`}></div>)}
+
+  
 const images = {
     'identities': identities,
     'indian-imagery': indianimagery,
@@ -84,7 +98,7 @@ function Modal(props) {
                     // font-size: 1.02rem;
                     font-weight: 900;
                 }
-            `}><Closer />
+            `}><Ecks />
             
                 <div  css={css`
                     flex: 300px;
