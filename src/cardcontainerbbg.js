@@ -83,7 +83,7 @@ function Modal(props) {
                 left: 50%;
                 transform: translate(-50%,-50%);
                 
-                background: rgba(37,37,37,0.5);
+                background: rgba(37,37,37,1);
                 border: 2px solid white;
                 border-radius: 8px;
                 -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.15);

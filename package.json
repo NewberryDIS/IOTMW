@@ -2,7 +2,7 @@
   "name": "iotmw",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://publications.newberry.org/indiansofthemidwest/",
+  "homepage": "https://publications.newberry.org/digital/indians-midwest/",
   "dependencies": {
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
