@@ -97,7 +97,7 @@ const ResponsiveMenu = () => <div
     <ul>
         {Menucontent.map((item, index) =>
             <li key={index}  >
-                <a href={`https://publications.newberry.org/digital/indians-midwest/${item[0]}.html`}>{item[1]}</a>
+                <a href={`https://publications.newberry.org/digital/indians-midwest/${item[0]}`}>{item[1]}</a>
             </li>
         )}
     </ul>
@@ -175,7 +175,7 @@ export default class MenuContainer extends React.Component {
                         }
                     `}
                         >
-                        <a href={`https://publications.newberry.org/digital/indians-midwest/${item[0]}.html`}>{item[1]}</a>
+                        <a href={`https://publications.newberry.org/digital/indians-midwest/${item[0]}`}>{item[1]}</a>
                     </li>
                 )}
 
