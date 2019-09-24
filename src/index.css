@@ -3,9 +3,9 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url(./images/wp.jpg);
+    /* background: url(./images/wp.jpg);
     background-position: 60% 50%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 a {
     color: black;
