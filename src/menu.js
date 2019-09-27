@@ -154,6 +154,7 @@ export default class MenuContainer extends React.Component {
                         text-align: center;
                         vertical-align: top; 
                         color: black;
+                        font-weight: 900;
                         text-decoration: none;
                         text-transform: uppercase;
                         font-family: 'Lato', sans-serif;
