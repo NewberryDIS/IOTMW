@@ -11,7 +11,7 @@ import bg11 from './images/moreBGs/bg11.jpg';
 const Bg = (props) => {
     return (
         <div css={css`
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
@@ -32,7 +32,7 @@ const Bg = (props) => {
 export default class Backgrounds extends React.Component {
     render(){
         return(
-            <div>
+            <div >
                 <Global styles={css`
                     @keyframes fader {
                         0% {
@@ -52,8 +52,8 @@ export default class Backgrounds extends React.Component {
                         }
                     }
                 `} />
-                <Bg bg={bg01}   delay={'0s'} pos={'50% 0%'}/>
-                <Bg bg={bg02}  delay={'30s'} pos={'50%'}/>
+                <Bg bg={bg01} delay={'0s'}  pos={'50% 0%'}/>
+                <Bg bg={bg02} delay={'30s'} pos={'50%'}/>
                 <Bg bg={bg06} delay={'60s'} pos={'center'}/>
                 <Bg bg={bg11} delay={'90s'} pos={'center'}/>
             </div>
