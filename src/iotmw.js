@@ -16,19 +16,21 @@ const Corecontent  = styled.div`
     background-color: rgba(0,0,0,0.65);
     font-family: 'Lato', sans-serif;
     // flex: 2;
-    width: 75%;
+    // width: 75%;
     @media only screen and (max-width: 900px) { width: 100%;}
     color: white;
     padding: 20px;
-    margin: 10px auto;
+    // margin: 10px auto;
+    margin: auto;
     display: inline-block;
     & h2 {
         font-family: 'Libre Baskerville', serif;
     }
 `
 const Main = styled.div`
-    width: 75%;
-    margin: 0 auto 60px auto;
+    width: 55%;
+    // margin: 0 auto 60px auto;
+    margin: auto;
     // overflow: visible;
     @media only screen and (max-width: 800px) { width: 85%; margin: 20px auto;}
 `
