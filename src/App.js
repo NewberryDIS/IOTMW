@@ -9,11 +9,17 @@ import './toplevel.css';
 function App() {
     return (
         <div className="App">
+            <div className="maintop">
+
             <Backgrounds />
             <Banner />
             <Navbar />
             <Iotmw />
+            </div>
+            <div className="mainbottom">
+
             <Footer /> 
+            </div>
         </div>
     );
 }
