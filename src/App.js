@@ -5,7 +5,11 @@ import Backgrounds from './backgrounds';
 import Banner from './banner';
 import Footer from './footer';
 import './toplevel.css';
+import ReactGA from 'react-ga';
 
+
+ReactGA.initialize('UA-5551324-4');
+ReactGA.pageview(window.location.pathname);
 function App() {
     return (
         <div className="App">
