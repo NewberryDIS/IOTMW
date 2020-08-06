@@ -7,8 +7,8 @@ import identities from './images/iotmw-identities.jpg'
 import indianimagery from './images/iotmw-indian-imagery.jpg'
 import peopleplacestime from './images/iotmw-people-places-time.jpg'
 import property from './images/iotmw-property.jpg'
-import thehomelanditsuse from './images/iotmw-the-homeland-its-use.jpg'
-import themarketplace from './images/iotmw-the-marketplace.jpg'
+import homelanduse from './images/iotmw-homeland-use.jpg'
+import marketplace from './images/iotmw-marketplace.jpg'
 import treaties from './images/iotmw-treaties.jpg'
 
 const List = styled.ul`
@@ -59,8 +59,8 @@ const images = {
     'indian-imagery': indianimagery,
     'people-places-time': peopleplacestime,
     'property': property,
-    'the-homeland-its-use': thehomelanditsuse,
-    'the-marketplace': themarketplace,
+    'homeland-use': homelanduse,
+    'marketplace': marketplace,
     'treaties': treaties
 }
 function Modal(props) {
@@ -197,7 +197,7 @@ export default class Cardcontainer extends React.Component {
                                 z-index: -1;   
                               }
                         
-                        `} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal content={this.state.content}  />]}</li>
+                        `} onClick={() => this.handleClick(index)}>{item[2]}{!this.state.isHidden && [<Modal key={index} content={this.state.content}  />]}</li>
                     )}
                 </List>
             </div>

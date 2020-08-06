@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/digital/indians-midwest/static/css/main.6418fec9.chunk.css",
-    "main.js": "/digital/indians-midwest/static/js/main.ef1fe48d.chunk.js",
-    "main.js.map": "/digital/indians-midwest/static/js/main.ef1fe48d.chunk.js.map",
+    "main.js": "/digital/indians-midwest/static/js/main.cb40edcf.chunk.js",
+    "main.js.map": "/digital/indians-midwest/static/js/main.cb40edcf.chunk.js.map",
     "runtime~main.js": "/digital/indians-midwest/static/js/runtime~main.3807bf09.js",
     "runtime~main.js.map": "/digital/indians-midwest/static/js/runtime~main.3807bf09.js.map",
     "static/js/2.8018c55a.chunk.js": "/digital/indians-midwest/static/js/2.8018c55a.chunk.js",
     "static/js/2.8018c55a.chunk.js.map": "/digital/indians-midwest/static/js/2.8018c55a.chunk.js.map",
     "index.html": "/digital/indians-midwest/index.html",
-    "precache-manifest.9c35113a551967d1daf2639c1b3c097e.js": "/digital/indians-midwest/precache-manifest.9c35113a551967d1daf2639c1b3c097e.js",
+    "precache-manifest.74ef4674a878c0bd69e85515c6704f1e.js": "/digital/indians-midwest/precache-manifest.74ef4674a878c0bd69e85515c6704f1e.js",
     "service-worker.js": "/digital/indians-midwest/service-worker.js",
     "static/css/main.6418fec9.chunk.css.map": "/digital/indians-midwest/static/css/main.6418fec9.chunk.css.map",
     "static/media/Newberry_N.svg": "/digital/indians-midwest/static/media/Newberry_N.9d386151.svg",
@@ -16,12 +16,12 @@
     "static/media/bg02.jpg": "/digital/indians-midwest/static/media/bg02.21569e6c.jpg",
     "static/media/bg06.jpg": "/digital/indians-midwest/static/media/bg06.a4071980.jpg",
     "static/media/bg11.jpg": "/digital/indians-midwest/static/media/bg11.8daa27d0.jpg",
+    "static/media/iotmw-homeland-use.jpg": "/digital/indians-midwest/static/media/iotmw-homeland-use.91c38ccf.jpg",
     "static/media/iotmw-identities.jpg": "/digital/indians-midwest/static/media/iotmw-identities.a25e1dc0.jpg",
     "static/media/iotmw-indian-imagery.jpg": "/digital/indians-midwest/static/media/iotmw-indian-imagery.a18242c9.jpg",
+    "static/media/iotmw-marketplace.jpg": "/digital/indians-midwest/static/media/iotmw-marketplace.eb86ce1a.jpg",
     "static/media/iotmw-people-places-time.jpg": "/digital/indians-midwest/static/media/iotmw-people-places-time.b5369e3f.jpg",
     "static/media/iotmw-property.jpg": "/digital/indians-midwest/static/media/iotmw-property.11c34f29.jpg",
-    "static/media/iotmw-the-homeland-its-use.jpg": "/digital/indians-midwest/static/media/iotmw-the-homeland-its-use.91c38ccf.jpg",
-    "static/media/iotmw-the-marketplace.jpg": "/digital/indians-midwest/static/media/iotmw-the-marketplace.eb86ce1a.jpg",
     "static/media/iotmw-treaties.jpg": "/digital/indians-midwest/static/media/iotmw-treaties.8906277e.jpg"
   }
 }

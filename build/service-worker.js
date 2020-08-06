@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/digital/indians-midwest/precache-manifest.9c35113a551967d1daf2639c1b3c097e.js"
+  "/digital/indians-midwest/precache-manifest.74ef4674a878c0bd69e85515c6704f1e.js"
 );
 
 self.addEventListener('message', (event) => {
